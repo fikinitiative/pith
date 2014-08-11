@@ -10,6 +10,9 @@
       <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>/">
           <?php the_store_logo(null, array('class' => 'logo')); ?>
       </a>
+      <?php if(get_bloginfo('description') !=''){ ?>
+        <div class="navbar-brand-description"><?php echo get_bloginfo('description'); ?></div>
+      <?php } ?>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
@@ -19,5 +22,14 @@
         endif;
       ?>
     </nav>
+
+    <nav class="pull-right">
+      <?php
+        if (has_nav_menu('cart_menu')) :
+          wp_nav_menu(array('theme_location' => 'cart_menu', 'menu_class' => 'nav navbar-nav cart-menu'));
+        endif;
+        ?>
+    </nav>
+
   </div>
 </header>
