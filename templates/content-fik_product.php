@@ -11,10 +11,10 @@
                 <?php } ?>
             </a>
             <figcaption class="caption">
-                <h4 class="title">
+                <h3 class="title">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     <?php the_fik_price(); ?>
-                </h4>
+                </h3>
                 <?php echo get_the_tag_list( '<p class="tags"><span>', '</span>, <span>', '</span></p>') ?>
             </figcaption>
         </figure>
