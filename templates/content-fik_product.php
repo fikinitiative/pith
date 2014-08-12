@@ -3,7 +3,7 @@
 
 <article class="product-preview col-xs-12 col-sm-4">
 
-        <figure class="prod-image-wrap thumbnail">
+        <figure class="product-wrap thumbnail">
             <span class="onsale">Rebajado</span>
             <a href="<?php the_permalink(); ?>">
                 <?php if ( has_post_thumbnail() ) { ?>
