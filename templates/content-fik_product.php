@@ -3,14 +3,14 @@
 
 <article class="product-preview col-xs-12 col-sm-4">
 
-        <figure class="prod-image-wrap">
+        <figure class="prod-image-wrap thumbnail">
             <span class="onsale">Rebajado</span>
             <a href="<?php the_permalink(); ?>">
                 <?php if ( has_post_thumbnail() ) { ?>
                     <?php the_post_thumbnail( 'store-product-thumb', array('class' => 'img-responsive') ); ?>
                 <?php } ?>
             </a>
-            <figcaption>
+            <figcaption class="caption">
                 <h4 class="title">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     <?php the_fik_price(); ?>
