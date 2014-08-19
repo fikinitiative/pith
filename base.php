@@ -12,6 +12,14 @@
     get_template_part('templates/header');
   ?>
 
+  <?php if ( is_front_page() && is_active_sidebar( 'sidebar-home-top' ) ) : ?>
+      <section class="jumbotron sidebar-full sidebar-top">
+         <div class="container">
+           <?php dynamic_sidebar('sidebar-home-top'); ?>
+         </div>
+      </section>
+  <?php endif; ?>
+
   <div class="wrap container" role="document">
     <div class="content row">
       <main class="main <?php echo roots_main_class(); ?>" role="main">
