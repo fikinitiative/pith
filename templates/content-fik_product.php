@@ -22,7 +22,6 @@
 </article>
 
 <?php else: ?>
-    <?php dynamic_sidebar('sidebar-product-top'); ?>
 
     <article itemscope itemtype="http://schema.org/Product" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -58,9 +57,6 @@
                 <?php the_content(); ?>
                 </div>
                 <footer class="col-sm-12">
-                <?php if ( is_active_sidebar( 'sidebar-product-main' ) ) : ?>
-                    <?php dynamic_sidebar('sidebar-product-main'); ?>
-                <?php endif; ?>
                 <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
                 </footer>
                 </div>
@@ -68,9 +64,5 @@
         </div>
         <?php comments_template('/templates/comments.php'); ?>
     </article>
-
-    <?php if ( is_active_sidebar( 'sidebar-product-bottom' ) ) : ?>
-        <?php dynamic_sidebar('sidebar-product-bottom'); ?>
-    <?php endif ?>
 
 <?php endif; ?>

@@ -1,5 +1,3 @@
-<?php dynamic_sidebar('sidebar-store-main'); ?>
-
 <?php if (!have_posts()) : ?>
     <div class="alert alert-warning">
         <?php _e('Sorry, no results were found.', 'roots'); ?>
@@ -22,8 +20,4 @@
           </ul>
        </div>
     </nav>
-<?php endif; ?>
-
-<?php if ( is_active_sidebar( 'sidebar-store-bottom' ) ) : ?>
-    <?php dynamic_sidebar('sidebar-store-bottom'); ?>
 <?php endif; ?>
