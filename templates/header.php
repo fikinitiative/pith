@@ -15,7 +15,7 @@
       <?php } ?>
     </div>
 
-    <nav class="pull-right">
+    <nav class="pull-right cart-container">
       <?php
         if (has_nav_menu('cart_menu')) :
           wp_nav_menu(array('theme_location' => 'cart_menu', 'menu_class' => 'nav navbar-nav cart-menu'));
