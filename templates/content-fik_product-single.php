@@ -1,29 +1,4 @@
 <?php setup_postdata($post); ?>
-<?php if ( is_tax('store-section') || is_post_type_archive( 'fik_product' ) || is_home() || is_page_template( 'page-templates/store-front-page.php' ) || is_search() ) : // Only display product excerpt for home, archive page, store section and search ?>
-
-<article class="product-preview col-xs-12 col-sm-4">
-
-        <figure class="product-wrap thumbnail">
-            <span class="onsale">Rebajado</span>
-            <a href="<?php the_permalink(); ?>">
-                <?php if ( has_post_thumbnail() ) { ?>
-                    <?php the_post_thumbnail( 'store-product-thumb', array('class' => 'img-responsive') ); ?>
-                <?php } ?>
-            </a>
-            <figcaption class="caption">
-                <h3 class="title">
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    <?php the_fik_price(); ?>
-                </h3>
-                <?php echo get_the_tag_list( '<p class="tags"><span>', '</span>, <span>', '</span></p>') ?>
-            </figcaption>
-        </figure>
-
-</article>
-
-<?php do_action('clearfix_hook'); ?>
-
-<?php else: ?>
 
     <article itemscope itemtype="http://schema.org/Product" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -66,5 +41,3 @@
         </div>
         <?php comments_template('/templates/comments.php'); ?>
     </article>
-
-<?php endif; ?>

@@ -7,7 +7,8 @@
 
 <div class="row">
 <?php while (have_posts()) : the_post(); ?>
-    <?php get_template_part('templates/content-fik_product', get_post_format()); ?>
+  aaaaaa
+    <?php get_template_part('templates/content-fik_product-cols-3', get_post_format()); ?>
 <?php endwhile; ?>
 </div>
 
