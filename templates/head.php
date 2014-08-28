@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <?php wp_head(); ?>
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/assets/fonts/font-awesome/css/font-awesome.min.css'?>" type="text/css" media="all">
 
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>">
 </head>
