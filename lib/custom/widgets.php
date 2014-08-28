@@ -17,6 +17,15 @@ function pith_widgets_init() {
     'after_title'   => '</h3>',
   ));
 
+  register_sidebar(array(
+    'name'          => __('Store sidebar', 'roots'),
+    'id'            => 'sidebar-store',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ));
+
 // Footer
 
   register_sidebar(array(
@@ -58,7 +67,7 @@ function pith_widgets_init() {
 // Widget zones
 
   register_sidebar(array(
-    'name'          => __('Home Top 1 (Full width)', 'roots'),
+    'name'          => __('Home top 1 (Full width)', 'roots'),
     'id'            => 'widget-area-home-top-1',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
@@ -67,7 +76,7 @@ function pith_widgets_init() {
   ));
 
   register_sidebar(array(
-    'name'          => __('Home Top 2 (Normal width)', 'roots'),
+    'name'          => __('Home top 2 (Normal width)', 'roots'),
     'id'            => 'widget-area-home-top-2',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
@@ -76,7 +85,7 @@ function pith_widgets_init() {
   ));
 
   register_sidebar(array(
-    'name'          => __('Home Bottom', 'roots'),
+    'name'          => __('Home bottom', 'roots'),
     'id'            => 'widget-area-home-bottom',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
