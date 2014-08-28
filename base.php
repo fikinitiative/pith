@@ -26,6 +26,12 @@
       </section>
   <?php endif; ?>
 
+  <?php if ( is_page_template( 'template-contact.php' ) && is_active_sidebar( 'widget-area-contact-top' ) ) : ?>
+      <section class="jumbotron widget-area-full widget-area-top widget-area-contact">
+        <?php dynamic_sidebar('widget-area-contact-top'); ?>
+      </section>
+  <?php endif; ?>
+
   <div class="wrap container" role="document">
     <div class="content row">
       <main class="main <?php echo roots_main_class(); ?>" role="main">
