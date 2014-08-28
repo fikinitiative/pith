@@ -20,7 +20,7 @@
 <footer class="jumbotron closing">
     <div class="container">
     <p class="copy">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-    <p class="fik-stores-badge">Powered by<a href="http://fikstores.com/" target="_blank"><img src="/wp-content/themes/pith/assets/img/stacked-fik-logo-badge.svg#white" /></a></p>
+    <p class="fik-stores-badge">Powered by<a href="http://fikstores.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/fik-logo-badge-white.svg'?>" /></a></p>
     </div>
 </footer>
 
