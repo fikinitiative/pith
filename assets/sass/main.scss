@@ -16,6 +16,11 @@
 @import "layouts/_posts";            // Post styling
 
 // Pith
-@import "components/thumbnail-grid";    // General/Store thumbnail styling
-@import "components/cart";              // Cart styling
-@import "components/carousel";          // Bootstrap carousel styling
+@import "components/_thumbnail-grid";   // General/Store thumbnail styling
+@import "components/_cart-button";      // Cart button styling
+@import "components/_carousel";         // Bootstrap carousel styling
+@import "components/_closing";          // Fik footer styling
+@import "components/_widgets";          // Widgets general styling
+@import "layouts/_widget-areas";        // Fik widget areas styling
+@import "layouts/pages/_store";         // Store styling
+@import "layouts/pages/_cart";          // Cart page styling

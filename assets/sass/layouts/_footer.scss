@@ -1,1 +1,20 @@
-.content-info { }
+.content-info
+{
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    background-color: $gray-darker;
+    color: $gray-lighter;
+
+    p
+    {
+        font-size: $font-size-base;
+    }
+
+    .widget
+    {
+        .widget-title
+        {
+            margin-top: 0;
+        }
+    }
+}

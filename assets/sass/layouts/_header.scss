@@ -1,1 +1,25 @@
-.banner { }
+.banner
+{
+    margin: 0;
+
+    .navbar-header
+    {
+        .navbar-brand
+        {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            img
+            {
+                height: 50px;
+            }
+        }
+
+        .navbar-brand-description
+        {
+            display: flex;
+            margin-top: 17px;
+            font-size: $font-size-small;
+        }
+    }
+}

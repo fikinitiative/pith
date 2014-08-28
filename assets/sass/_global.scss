@@ -1,0 +1,15 @@
+// General styles
+
+body,
+button,
+input
+{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection
+{
+    color: $gray-lighter;
+    background-color: $brand-primary;
+}

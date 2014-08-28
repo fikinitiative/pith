@@ -1,15 +1,17 @@
 <?php
 
 
-// Shortcode for grid products
+// Grid products shortcode
 
 function pith_products_grid($atts) {
     global $wp_query;
+
     if (isset($atts['quantity'])) {
         $quantity = $atts['quantity'];
     } else {
-        $quantity = '10';
+        $quantity = '12';
     }
+
     if (isset($atts['columns'])) {
         $columns = $atts['columns'];
     } else {
@@ -17,45 +19,46 @@ function pith_products_grid($atts) {
     }
 
     $args = array(
-            'post_type' => 'fik_product',
-            'post_per_page' => $quantity,
-
+        'post_type' => 'fik_product',
+        'post_per_page' => $quantity,
     );
 
     if (isset($atts['slug'])) {
 
         $args['tax_query'] = array(
-                'relation' => 'OR',
-                array(
-                    'taxonomy' => 'store-section',
-                    'field' => 'slug',
-                    'terms' => $atts['slug']
-                )
+            'relation' => 'OR',
+            array(
+                'taxonomy' => 'store-section',
+                'field' => 'slug',
+                'terms' => $atts['slug']
             )
+        );
     }
 
     $temp_query = $wp_query;
     query_posts($args);
     if ($wp_query->have_posts()) {
         ?>
-        <ul class="product-list">
+        <section class="row">
             <?php
-            /* Start the Loop */
-            while (have_posts()) : the_post();
+                /* Start the Loop */
+                $i = 0;
+                while (have_posts() && $i < $quantity) : the_post();
 
-                /* Include the post format-specific template for the content. If you want to
-                 * this in a child theme then include a file called called content-___.php
-                 * (where ___ is the post format) and that will be used instead.
-                 */
-                if ($columns == 4){
-                    get_template_part('templates/content-fik_product-cols-4');
-                }else{
-                    get_template_part('templates/content-fik_product-cols-3');
-                }
+                    /* Include the post format-specific template for the content. If you want to
+                     * this in a child theme then include a file called called content-___.php
+                     * (where ___ is the post format) and that will be used instead.
+                     */
+                    if ($columns == 4){
+                        get_template_part('templates/content-fik_product-cols-4');
+                    }else{
+                        get_template_part('templates/content-fik_product-cols-3');
+                    }
 
-            endwhile;
+                $i++;
+                endwhile;
             ?>
-        </ul>
+        </section>
         <?php
     }
     $wp_query = $temp_query;
