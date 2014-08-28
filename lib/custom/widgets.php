@@ -13,7 +13,7 @@ function pith_widgets_init() {
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
@@ -21,66 +21,66 @@ function pith_widgets_init() {
 
   register_sidebar(array(
     'name'          => __('Footer column one', 'roots'),
-    'id'            => 'sidebar-footer-one',
+    'id'            => 'widget-area-footer-one',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
   register_sidebar(array(
     'name'          => __('Footer column two', 'roots'),
-    'id'            => 'sidebar-footer-two',
+    'id'            => 'widget-area-footer-two',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
   register_sidebar(array(
     'name'          => __('Footer column three', 'roots'),
-    'id'            => 'sidebar-footer-three',
+    'id'            => 'widget-area-footer-three',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
   register_sidebar(array(
     'name'          => __('Footer column four', 'roots'),
-    'id'            => 'sidebar-footer-four',
+    'id'            => 'widget-area-footer-four',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
 // Widget zones
 
   register_sidebar(array(
-    'name'          => __('Home Top 1', 'roots'),
-    'id'            => 'sidebar-home-top-1',
+    'name'          => __('Home Top 1 (Full width)', 'roots'),
+    'id'            => 'widget-area-home-top-1',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
   register_sidebar(array(
-    'name'          => __('Home Top 2', 'roots'),
-    'id'            => 'sidebar-home-top-2',
+    'name'          => __('Home Top 2 (Normal width)', 'roots'),
+    'id'            => 'widget-area-home-top-2',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
   register_sidebar(array(
     'name'          => __('Home Bottom', 'roots'),
-    'id'            => 'sidebar-home-bottom',
+    'id'            => 'widget-area-home-bottom',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 

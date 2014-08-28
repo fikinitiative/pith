@@ -12,16 +12,16 @@
     get_template_part('templates/header');
   ?>
 
-  <?php if ( is_front_page() && is_active_sidebar( 'sidebar-home-top-1' ) ) : ?>
-      <section class="jumbotron sidebar-full sidebar-top sidebar-home sidebar-home-first">
-        <?php dynamic_sidebar('sidebar-home-top-1'); ?>
+  <?php if ( is_front_page() && is_active_sidebar( 'widget-area-home-top-1' ) ) : ?>
+      <section class="jumbotron widget-area-full widget-area-top widget-area-home widget-area-home-first">
+        <?php dynamic_sidebar('widget-area-home-top-1'); ?>
       </section>
   <?php endif; ?>
 
-  <?php if ( is_front_page() && is_active_sidebar( 'sidebar-home-top-2' ) ) : ?>
-      <section class="jumbotron sidebar-full sidebar-top sidebar-home">
+  <?php if ( is_front_page() && is_active_sidebar( 'widget-area-home-top-2' ) ) : ?>
+      <section class="jumbotron widget-area-full widget-area-top widget-area-home">
         <div class="container">
-            <?php dynamic_sidebar('sidebar-home-top-2'); ?>
+            <?php dynamic_sidebar('widget-area-home-top-2'); ?>
         </div>
       </section>
   <?php endif; ?>
@@ -39,10 +39,10 @@
     </div><!-- /.content -->
   </div><!-- /.wrap -->
 
-  <?php if ( is_front_page() && is_active_sidebar( 'sidebar-home-bottom' ) ) : ?>
-      <section class="jumbotron sidebar-full sidebar-bottom sidebar-home">
+  <?php if ( is_front_page() && is_active_sidebar( 'widget-area-home-bottom' ) ) : ?>
+      <section class="jumbotron widget-area-full widget-area-bottom widget-area-home">
         <div class="container">
-            <?php dynamic_sidebar('sidebar-home-bottom'); ?>
+            <?php dynamic_sidebar('widget-area-home-bottom'); ?>
         </div>
       </section>
   <?php endif; ?>
