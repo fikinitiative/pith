@@ -22,4 +22,19 @@
             font-size: $font-size-small;
         }
     }
+
+    .navbar-collapse
+    {
+        @media all and (max-width:$screen-xs-max)
+        {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+
+            .dropdown-menu
+            {
+                text-align: center;
+            }
+        }
+    }
 }
