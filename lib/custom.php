@@ -3,7 +3,7 @@
  * Custom functions
  */
 
-require_once locate_template('/lib/custom/shortcodes.php');
+require_once locate_template('/lib/custom/shortcodes/shortcodes.php');
 require_once locate_template('/lib/custom/widgets.php');
 require_once locate_template('/lib/custom/menus.php');
 require_once locate_template('/lib/custom/cart.php');
