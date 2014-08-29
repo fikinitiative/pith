@@ -21,21 +21,18 @@
 
             <div class="product-info col-sm-6">
                 <div class="row">
-                <header class="col-sm-9">
-                    <h1 itemprop="name" class="product-title"><?php the_title(); ?></h1>
-                </header>
-                <div class="price col-sm-3">
-                <?php the_fik_price(); ?>
-                </div>
-                <div class="product-options col-sm-12">
-                <?php the_fik_add_to_cart_button(); ?>
-                </div>
-                <div class="product-description col-sm-12">
-                <?php the_content(); ?>
-                </div>
-                <footer class="col-sm-12">
-                <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-                </footer>
+                    <header class="col-xs-12">
+                        <h1 itemprop="name" class="product-title"><?php the_title(); ?></h1>
+                    </header>
+                    <div class="product-price col-xs-12">
+                        <?php the_fik_price(); ?>
+                    </div>
+                    <div class="product-description col-sm-12">
+                        <?php the_content(); ?>
+                    </div>
+                    <div class="product-options col-sm-12">
+                        <?php the_fik_add_to_cart_button(); ?>
+                    </div>
                 </div>
             </div>
         </div>
