@@ -27,10 +27,10 @@
                     <div class="product-price col-xs-12">
                         <?php the_fik_price(); ?>
                     </div>
-                    <div class="product-description col-sm-12">
+                    <div class="product-description col-xs-12">
                         <?php the_content(); ?>
                     </div>
-                    <div class="product-options col-sm-12">
+                    <div class="product-options col-xs-12">
                         <?php the_fik_add_to_cart_button(); ?>
                     </div>
                 </div>

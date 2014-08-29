@@ -9,7 +9,10 @@
     {
         .product-title
         {
-            margin-top: 0;
+            @media all and (min-width:$screen-xs-max)
+            {
+                margin-top: 0;
+            }
         }
 
         .product-price
