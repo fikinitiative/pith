@@ -5,7 +5,11 @@ function bootstrap_clearfix_cols($columns) {
     if ($columns == 3){
 
         if(($wp_query->current_post + 1) % 3 == 0) {
-            echo '<div class="clearfix hidden-xs"></div>';
+            echo '<div class="clearfix hidden-xs hidden-sm"></div>';
+        }
+
+        if(($wp_query->current_post + 1) % 2 == 0) {
+            echo '<div class="clearfix visible-sm-block"></div>';
         }
 
     }elseif($columns == 4){
