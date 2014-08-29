@@ -1,8 +1,18 @@
 .sidebar
 {
-    .widget-title
+    .widget
     {
-        margin-top: 0;
+        margin-bottom: 15px;
+
+        &:last-child
+        {
+            margin-bottom: 0;
+        }
+
+        .widget-title
+        {
+            margin-top: 0;
+        }
     }
 }
 

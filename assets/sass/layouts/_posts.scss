@@ -1,5 +1,19 @@
-.hentry header { }
-.hentry time { }
-.hentry .byline { }
-.hentry .entry-content { }
-.hentry footer { }
+// General & archive blog
+.hentry
+{
+    margin-bottom: 30px;
+
+    &:last-child
+    {
+        margin-bottom: 0;
+    }
+}
+
+// Single post
+.single-post
+{
+    .hentry
+    {
+        margin-bottom: 0;
+    }
+}
