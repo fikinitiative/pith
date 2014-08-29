@@ -2,7 +2,7 @@
   <article <?php post_class(); ?>>
     <?php if ( has_post_thumbnail() ) { ?>
       <figure>
-        <?php the_post_thumbnail( 'post-custom-sidebar-thumbnail', array('class' => 'img-responsive') ); ?>
+        <?php the_post_thumbnail( 'post-custom-thumbnail', array('class' => 'img-responsive') ); ?>
       </figure>
     <?php } ?>
     <header>
