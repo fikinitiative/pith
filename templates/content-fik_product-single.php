@@ -33,6 +33,11 @@
                     <div class="product-options col-xs-12">
                         <?php the_fik_add_to_cart_button(); ?>
                     </div>
+                    <?php if ( is_active_sidebar( 'widget-area-post-bottom' ) ) : ?>
+                      <footer class="widget-area-post col-xs-12">
+                        <?php dynamic_sidebar('widget-area-post-bottom'); ?>
+                      </footer>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
