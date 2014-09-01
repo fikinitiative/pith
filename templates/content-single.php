@@ -12,9 +12,11 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
-    <footer>
-      <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-    </footer>
+    <?php if ( is_active_sidebar( 'widget-area-post-bottom' ) ) : ?>
+      <footer class="widget-area-post">
+        <?php dynamic_sidebar('widget-area-post-bottom'); ?>
+      </footer>
+    <?php endif; ?>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
 <?php endwhile; ?>
