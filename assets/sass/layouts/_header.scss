@@ -8,6 +8,8 @@
         {
             padding-top: 0;
             padding-bottom: 0;
+            display: inline-block;
+            float: none;
 
             img
             {
@@ -17,7 +19,8 @@
 
         .navbar-brand-description
         {
-            display: flex;
+            display: inline-block;
+            float: none;
             margin-top: 17px;
             font-size: $font-size-small;
 
