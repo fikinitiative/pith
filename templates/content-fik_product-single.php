@@ -33,9 +33,9 @@
                     <div class="product-options col-xs-12">
                         <?php the_fik_add_to_cart_button(); ?>
                     </div>
-                    <?php if ( is_active_sidebar( 'widget-area-post-bottom' ) ) : ?>
-                      <footer class="widget-area-post col-xs-12">
-                        <?php dynamic_sidebar('widget-area-post-bottom'); ?>
+                    <?php if ( is_active_sidebar( 'widget-area-product-description-bottom' ) ) : ?>
+                      <footer class="widget-area-product-description-bottom col-xs-12">
+                        <?php dynamic_sidebar('widget-area-product-description-bottom'); ?>
                       </footer>
                     <?php endif; ?>
                 </div>
