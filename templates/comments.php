@@ -4,38 +4,38 @@
   }
 ?>
 
-<section id="comments">
-  <?php if (have_comments()) : ?>
-    <h3><?php printf(_n('One Response to &ldquo;%2$s&rdquo;', '%1$s Responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
+<?php if (have_comments()) : ?>
+    <section id="comments">
+        <h3><?php printf(_n('One Response to &ldquo;%2$s&rdquo;', '%1$s Responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
 
-    <ol class="media-list">
-      <?php wp_list_comments(array('walker' => new Roots_Walker_Comment)); ?>
-    </ol>
+        <ol class="media-list">
+          <?php wp_list_comments(array('walker' => new Roots_Walker_Comment)); ?>
+        </ol>
 
-    <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
-      <nav>
-        <ul class="pager">
-          <?php if (get_previous_comments_link()) : ?>
-            <li class="previous"><?php previous_comments_link(__('&larr; Older comments', 'roots')); ?></li>
-          <?php endif; ?>
-          <?php if (get_next_comments_link()) : ?>
-            <li class="next"><?php next_comments_link(__('Newer comments &rarr;', 'roots')); ?></li>
-          <?php endif; ?>
-        </ul>
-      </nav>
-    <?php endif; ?>
+        <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
+          <nav>
+            <ul class="pager">
+              <?php if (get_previous_comments_link()) : ?>
+                <li class="previous"><?php previous_comments_link(__('<span class="arrow">&larr;</span> <span class="text">Older comments</span>', 'roots')); ?></li>
+              <?php endif; ?>
+              <?php if (get_next_comments_link()) : ?>
+                <li class="next"><?php next_comments_link(__('<span class="text">Newer comments</span> <span class="arrow">&rarr;</span>', 'roots')); ?></li>
+              <?php endif; ?>
+            </ul>
+          </nav>
+        <?php endif; ?>
 
-    <?php if (!comments_open() && !is_page() && post_type_supports(get_post_type(), 'comments')) : ?>
-      <div class="alert alert-warning">
-        <?php _e('Comments are closed.', 'roots'); ?>
-      </div>
-    <?php endif; ?>
-  <?php elseif(!comments_open() && !is_page() && post_type_supports(get_post_type(), 'comments')) : ?>
-    <div class="alert alert-warning">
-      <?php _e('Comments are closed.', 'roots'); ?>
-    </div>
-  <?php endif; ?>
-</section><!-- /#comments -->
+        <?php if (!comments_open() && !is_page() && post_type_supports(get_post_type(), 'comments')) : ?>
+          <div class="alert alert-warning">
+            <?php _e('Comments are closed.', 'roots'); ?>
+          </div>
+        <?php endif; ?>
+      <?php elseif(!comments_open() && !is_page() && post_type_supports(get_post_type(), 'comments')) : ?>
+        <div class="alert alert-warning">
+          <?php _e('Comments are closed.', 'roots'); ?>
+        </div>
+    </section><!-- /#comments -->
+<?php endif; ?>
 
 <section id="respond">
   <?php if (comments_open()) : ?>

@@ -12,11 +12,23 @@
     get_template_part('templates/header');
   ?>
 
-  <?php if ( is_front_page() && is_active_sidebar( 'sidebar-home-top' ) ) : ?>
-      <section class="jumbotron sidebar-full sidebar-top">
-         <div class="container">
-           <?php dynamic_sidebar('sidebar-home-top'); ?>
-         </div>
+  <?php if ( is_front_page() && is_active_sidebar( 'widget-area-home-top-1' ) ) : ?>
+      <section class="jumbotron widget-area-full widget-area-top widget-area-home widget-area-home-first">
+        <?php dynamic_sidebar('widget-area-home-top-1'); ?>
+      </section>
+  <?php endif; ?>
+
+  <?php if ( is_front_page() && is_active_sidebar( 'widget-area-home-top-2' ) ) : ?>
+      <section class="jumbotron widget-area-full widget-area-top widget-area-home">
+        <div class="container">
+            <?php dynamic_sidebar('widget-area-home-top-2'); ?>
+        </div>
+      </section>
+  <?php endif; ?>
+
+  <?php if ( is_page_template( 'template-contact.php' ) && is_active_sidebar( 'widget-area-contact-top' ) ) : ?>
+      <section class="jumbotron widget-area-full widget-area-top widget-area-contact">
+        <?php dynamic_sidebar('widget-area-contact-top'); ?>
       </section>
   <?php endif; ?>
 
@@ -32,6 +44,14 @@
       <?php endif; ?>
     </div><!-- /.content -->
   </div><!-- /.wrap -->
+
+  <?php if ( is_front_page() && is_active_sidebar( 'widget-area-home-bottom' ) ) : ?>
+      <section class="jumbotron widget-area-full widget-area-bottom widget-area-home">
+        <div class="container">
+            <?php dynamic_sidebar('widget-area-home-bottom'); ?>
+        </div>
+      </section>
+  <?php endif; ?>
 
   <?php get_template_part('templates/footer'); ?>
 

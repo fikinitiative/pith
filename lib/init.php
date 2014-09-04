@@ -21,8 +21,8 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
-  add_image_size('post-custom-thumbnail', 300, 300, true);
-  add_image_size('store-product-thumb', 260, 245, true);
+  add_image_size('post-custom-thumbnail', 1020, 600, true);
+  add_image_size('store-product-custom-thumbnail', 728, 686, true);
 
   // Add post formats
   // http://codex.wordpress.org/Post_Formats
@@ -32,27 +32,3 @@ function roots_setup() {
   add_editor_style('/assets/css/editor-style.css');
 }
 add_action('after_setup_theme', 'roots_setup');
-
-/**
- * Register sidebars
- */
-function roots_widgets_init() {
-  register_sidebar(array(
-    'name'          => __('Primary', 'roots'),
-    'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>',
-  ));
-
-  register_sidebar(array(
-    'name'          => __('Footer', 'roots'),
-    'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>',
-  ));
-}
-add_action('widgets_init', 'roots_widgets_init');
