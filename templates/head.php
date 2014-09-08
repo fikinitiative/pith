@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php wp_title('|', true, 'right'); ?></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   <?php wp_head(); ?>
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/assets/fonts/font-awesome/css/font-awesome.min.css'?>" type="text/css" media="all">
