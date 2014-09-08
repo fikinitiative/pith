@@ -113,3 +113,57 @@ if ( shortcode_exists('fikproducts')){
 }
 
 add_shortcode('fikproducts', 'pith_products_grid');
+
+
+// -------------
+// ------------- Buttons shortcode
+// -------------
+
+function pith_buttons($atts) {
+    global $wp_query;
+
+    if (isset($atts['text']) && $atts['text'] != '') {
+        $text = $atts['text'];
+    } else {
+        $text = 'Button';
+    }
+
+    if (isset($atts['link']) && $atts['link'] != '') {
+        $link = $atts['link'];
+    } else {
+        $link = '';
+    }
+
+    if (isset($atts['color']) && $atts['color'] != '') {
+
+        if ( $atts['color'] == 'primary') {
+            $color = 'primary';
+        } else if ( $atts['color'] == 'secondary') {
+            $color = 'info';
+        } else {
+            $color = 'primary';
+        }
+    } else {
+        $color = 'default';
+    }
+
+    $temp_query = $wp_query;
+
+    if ( $link != '' ) {
+        ?>
+            <a type="button" class="btn btn-<?php echo($color); ?>" href="<?php echo($link); ?>"><?php echo($text); ?></a>
+        <?php
+    } else {
+        ?>
+            <button type="button" class="btn btn-<?php echo($color); ?>"><?php echo($text); ?></button>
+        <?php
+    }
+    $wp_query = $temp_query;
+
+}
+
+if ( shortcode_exists('fikbutton')){
+    remove_shortcode('fikbutton');
+}
+
+add_shortcode('fikbutton', 'pith_buttons');
