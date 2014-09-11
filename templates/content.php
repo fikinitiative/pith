@@ -1,6 +1,6 @@
 <article <?php post_class(); ?>>
  <?php if ( has_post_thumbnail() ) { ?>
-      <figure>
+      <figure class="featured-image">
           <a href="<?php the_permalink(); ?>">
               <?php the_post_thumbnail( 'post-custom-thumbnail', array('class' => 'img-responsive') ); ?>
           </a>
