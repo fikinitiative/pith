@@ -25,7 +25,7 @@
             margin-top: 17px;
             font-size: $font-size-small;
 
-            @media all and (max-width:$screen-xs-max)
+            @media all and (max-width:$screen-sm-max)
             {
                 display: none;
             }
