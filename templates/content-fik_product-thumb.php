@@ -10,7 +10,7 @@
             <figcaption class="caption">
                 <h3 class="title">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    <span class="product-price"><?php the_fik_price(); ?><?php the_fik_previous_price(); ?></span>
+                    <span class="product-price"><?php the_fik_previous_price(); ?><?php the_fik_price(); ?></span>
                 </h3>
                 <?php echo get_the_tag_list( '<p class="tags"><span>', '</span>, <span>', '</span></p>') ?>
             </figcaption>

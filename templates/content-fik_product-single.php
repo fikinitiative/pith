@@ -25,8 +25,8 @@
                         <h1 itemprop="name" class="product-title"><?php the_title(); ?></h1>
                     </header>
                     <div class="product-price col-xs-12">
-                        <?php the_fik_price(); ?>
                         <?php the_fik_previous_price(); ?>
+                        <?php the_fik_price(); ?>
                     </div>
                     <div class="product-description col-xs-12">
                         <?php the_content(); ?>
