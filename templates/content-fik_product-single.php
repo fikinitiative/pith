@@ -26,6 +26,7 @@
                     </header>
                     <div class="product-price col-xs-12">
                         <?php the_fik_price(); ?>
+                        <?php the_fik_previous_price(); ?>
                     </div>
                     <div class="product-description col-xs-12">
                         <?php the_content(); ?>
