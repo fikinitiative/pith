@@ -8,7 +8,7 @@
                 <div class="product-image-frame">
                     <?php
                         // We print the product thumbnail
-                        the_post_thumbnail('store-single-product-custom-thumbnail',array('id' => 'prod-img', 'class' => 'img-thumbnail'));
+                        the_post_thumbnail('store-single-product-custom-thumbnails',array('id' => 'prod-img', 'class' => 'img-thumbnail'));
                     ?>
                 </div>
                 <?php
