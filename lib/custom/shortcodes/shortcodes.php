@@ -283,4 +283,8 @@ function pith_slider($atts) {
     }
 }
 
+if ( shortcode_exists('fikslider')){
+    remove_shortcode('fikslider');
+}
+
 add_shortcode('fikslider', 'pith_slider');
