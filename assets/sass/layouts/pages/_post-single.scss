@@ -5,6 +5,11 @@
     {
         margin-bottom: 0;
 
+        figure
+        {
+            margin-bottom: $line-height-computed;
+        }
+
         .entry-content
         {
             margin-bottom: 30px;

@@ -17,7 +17,7 @@ add_filter( 'upload_mimes', 'cc_mime_types' );
 add_filter('widget_text', 'do_shortcode');
 
 /*
-*   Add shortcode support on text widgets
+*   Add wpautop
 */
 
 add_filter( 'the_content', 'wpautop', 99 );
