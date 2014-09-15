@@ -22,6 +22,7 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
   add_image_size('post-custom-thumbnail', 1020, 600, true);
+  add_image_size('latest-post-custom-thumbnail', 660, 300, true);
   add_image_size('store-product-custom-thumbnail', 728, 686, true);
   add_image_size('store-single-product-custom-thumbnail', 1110, 1110, true);
 
