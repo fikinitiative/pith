@@ -226,7 +226,7 @@ function pith_latest_posts($atts) {
     extract(shortcode_atts($args, $atts));
 
     $q = new WP_Query(
-        array('orderby' => $order_by, 'order' => $order, 'posts_per_page' => $number_of_colums, 'category_name' => $category)
+        array('quantity' => $quantity)
     );
 
     $html = "";
@@ -262,6 +262,23 @@ if ( shortcode_exists('fik_latest_posts')){
 }
 
 add_shortcode('fik_latest_posts', 'pith_latest_posts');
+
+
+// -------------
+// ------------- Special titles shortcode
+// -------------
+
+function pith_special_title($atts, $content = null) {
+
+    return "<h4><span class='fik-special-title'>" . $content . "</span><h4>";
+
+}
+
+if ( shortcode_exists('fik_special_title')){
+    remove_shortcode('fik_special_title');
+}
+
+add_shortcode('fik_special_title', 'pith_special_title');
 
 
 // -------------
