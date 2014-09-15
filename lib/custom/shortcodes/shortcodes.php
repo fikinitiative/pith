@@ -183,7 +183,7 @@ function pith_products_grid($atts) {
     $temp_query = $wp_query;
     query_posts($args);
     if ($wp_query->have_posts()) {
-        $return = '<section class="row">';
+        $product_grid = '<section class="row">';
         /* Start the Loop */
         $i = 0;
         while (have_posts() && $i < $quantity) : the_post();
@@ -192,18 +192,18 @@ function pith_products_grid($atts) {
              * (where ___ is the post format) and that will be used instead.
              */
             if ($columns == 4){
-                get_template_part('templates/content-fik_product-cols-4');
+                $product_grid .= load_template_part('templates/content-fik_product-cols-4');
             }else{
-                get_template_part('templates/content-fik_product-cols-3');
+                $product_grid .= load_template_part('templates/content-fik_product-cols-3');
             }
             $i++;
 
         endwhile;
 
-        $return .= '</section>';
+        $product_grid .= '</section>';
     }
     $wp_query = $temp_query;
-    return $return;
+    return $product_grid;
 }
 
 if ( shortcode_exists('fik_products')){
