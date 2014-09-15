@@ -16,6 +16,12 @@ add_filter( 'upload_mimes', 'cc_mime_types' );
 
 add_filter('widget_text', 'do_shortcode');
 
+/*
+*   Add shortcode support on text widgets
+*/
+
+add_filter( 'the_content', 'wpautop', 99 );
+
 /* 
  * This functions allows to get the contents of a template into a variable,
  * needed for shortcodes. 
