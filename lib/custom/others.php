@@ -20,7 +20,7 @@ add_filter('widget_text', 'do_shortcode');
 *   Add wpautop
 */
 
-add_filter( 'the_content', 'wpautop', 99 );
+add_filter( 'the_content', 'wpautop', 10 );
 
 /* 
  * This functions allows to get the contents of a template into a variable,
