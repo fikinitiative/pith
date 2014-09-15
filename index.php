@@ -13,9 +13,11 @@
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav row">
-        <ul class="pager col-sm-12">
+     <div class="col-sm-12">
+        <ul class="pager">
             <li class="previous"><?php next_posts_link(__('<span class="arrow">&larr;</span> <span class="text">Older</span>', 'roots')); ?></li>
             <li class="next"><?php previous_posts_link(__('<span class="text">Newer</span> <span class="arrow">&rarr;</span>', 'roots')); ?></li>
         </ul>
-    </nav>
+     </div>
+  </nav>
 <?php endif; ?>
