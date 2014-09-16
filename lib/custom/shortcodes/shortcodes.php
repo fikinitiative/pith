@@ -220,20 +220,20 @@ add_shortcode('fik_products', 'pith_products_grid');
 function pith_latest_posts($atts) {
 
     $args = array(
-        "quantity"       => "2"
+        "quantity"       => "2",
+        "category_name"       => ""
     );
 
     extract(shortcode_atts($args, $atts));
 
     $q = new WP_Query(
-        array('quantity' => $quantity)
+        array('posts_per_page' => $quantity, 'category_name' => $category_name)
     );
 
     $html = "";
     $html .= "<section class='row latests-posts'>";
 
-    $i = 0;
-    while ($q->have_posts() && $i < $quantity) : $q->the_post();
+    while ($q->have_posts()) : $q->the_post();
 
         $html .= '<article class="col-sm-6">';
         $html .= '<figure class="featured-image">';
@@ -248,7 +248,6 @@ function pith_latest_posts($atts) {
         $html .= '<p class="byline author vcard">By <a href="'.get_author_posts_url(get_the_author_meta(ID)).'" rel="author" class="fn">'.get_the_author().'</a></p>';
         $html .= '</footer>';
         $html .= '</article>';
-        $i++;
 
     endwhile;
     wp_reset_query();
