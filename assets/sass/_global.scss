@@ -24,14 +24,19 @@ a:focus *,
     -moz-outline-style: none !important;
 }
 
-.fik-special-title
+.fik-special-title-content
 {
-    text-transform: uppercase;
-    padding-bottom: 5px;
-    font-weight: $headings-font-weight;
-    border-bottom: 2px solid $brand-primary;
-    margin-bottom: $line-height-computed;
-    display: inline-block;
+    margin: 0;
+
+    .fik-special-title
+    {
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-weight: $headings-font-weight;
+        border-bottom: 2px solid $brand-primary;
+        margin-bottom: $line-height-computed;
+        display: inline-block;
+    }
 }
 
 // Prevent overflow of big user images (responsive)
