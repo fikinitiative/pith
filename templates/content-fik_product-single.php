@@ -14,7 +14,7 @@
                 <?php
                     // this function outputs a <ul> with class="product-image-thumbnails" where each <li> is a thumbnil that links to a biger image (sizes specified in function).
                     // We also pass the size of the zoom image which url and size are returned as data attributes of the img. The last 2 sizes are the max width of the video thumbnail and the max width of a video embed
-                    the_product_gallery_thumbnails(array(64,64) , array(620,9999), array(1240,930),64,620,FALSE);
+                    the_product_gallery_thumbnails(array(150,150) , 'store-single-product-custom-thumbnail', 'store-single-product-custom-thumbnail');
                     ?>
             </div>
             <?php endif; ?>
