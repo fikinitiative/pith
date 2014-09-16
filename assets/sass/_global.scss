@@ -33,3 +33,11 @@ a:focus *,
     margin-bottom: $line-height-computed;
     display: inline-block;
 }
+
+// Prevent overflow of big user images (responsive)
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}

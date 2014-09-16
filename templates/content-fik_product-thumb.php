@@ -1,7 +1,10 @@
 <?php setup_postdata($post); ?>
 
         <figure class="product-wrap thumbnail">
-<!--            <span class="label label-info product-state">Rebajado</span>-->
+<!--
+                <span class="label label-info product-state">Rebajado</span>
+                <span class="label label-warning product-state">Out of stock</span>
+-->
             <a href="<?php the_permalink(); ?>">
                 <?php if ( has_post_thumbnail() ) { ?>
                     <?php the_post_thumbnail( 'store-product-custom-thumbnail', array('class' => 'img-responsive') ); ?>
