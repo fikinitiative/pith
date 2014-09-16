@@ -65,7 +65,7 @@ add_shortcode('fik_row', 'pith_bootstrap_row');
 
 function pith_bootstrap_col_1_2($atts, $content = null) {
 
-    return "<div class='col-sm-6'>" . $content . "</div>";
+    return "<div class='col-sm-6'>" . do_shortcode($content) . "</div>";
 
 }
 
@@ -82,7 +82,7 @@ add_shortcode('fik_col_1-2', 'pith_bootstrap_col_1_2');
 
 function pith_bootstrap_col_1_3($atts, $content = null) {
 
-    return "<div class='col-sm-4'>" . $content . "</div>";
+    return "<div class='col-sm-4'>" . do_shortcode($content) . "</div>";
 
 }
 
@@ -99,7 +99,7 @@ add_shortcode('fik_col_1-3', 'pith_bootstrap_col_1_3');
 
 function pith_bootstrap_col_1_4($atts, $content = null) {
 
-    return "<div class='col-sm-3'>" . $content . "</div>";
+    return "<div class='col-sm-3'>" . do_shortcode($content) . "</div>";
 
 }
 
@@ -116,7 +116,7 @@ add_shortcode('fik_col_1-4', 'pith_bootstrap_col_1_4');
 
 function pith_bootstrap_col_2_3($atts, $content = null) {
 
-    return "<div class='col-sm-8'>" . $content . "</div>";
+    return "<div class='col-sm-8'>" . do_shortcode($content) . "</div>";
 
 }
 
@@ -133,7 +133,7 @@ add_shortcode('fik_col_2-3', 'pith_bootstrap_col_2_3');
 
 function pith_bootstrap_col_3_4($atts, $content = null) {
 
-    return "<div class='col-sm-9'>" . $content . "</div>";
+    return "<div class='col-sm-9'>" . do_shortcode($content) . "</div>";
 
 }
 
