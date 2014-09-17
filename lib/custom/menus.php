@@ -88,3 +88,16 @@ function insert_menu_items($menu_id, $menu_location) {
     $fun = 'insert_' . $menu_location . '_menu_items';
     $fun($menu_id);
 }
+
+/**
+ * Fix nav menu active classes for custom post types
+ **/
+function roots_cpt_active_menu($menu) {
+    if ('fik_product' === get_post_type()) {
+        $menu = str_replace('active', '', $menu);
+        $menu = str_replace('menu-store', 'menu-store active', $menu);
+    }
+
+    return $menu;
+}
+add_filter('nav_menu_css_class', 'roots_cpt_active_menu', 400);
