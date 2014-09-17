@@ -269,7 +269,7 @@ add_shortcode('fik_latest_posts', 'pith_latest_posts');
 
 function pith_special_title($atts, $content = null) {
 
-    return "<h5 class='fik-special-title-content'><span class='fik-special-title'>" . $content . "</span></h5>";
+    return "<h5 class='fik-special-title'>" . $content . "</h5>";
 
 }
 

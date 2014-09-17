@@ -1,0 +1,22 @@
+// Special titles
+
+.fik-special-title
+{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: $headings-font-weight;
+    margin-bottom: 2 * $line-height-computed;
+    position: relative;
+
+    &:after
+    {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 3px;
+        left: 0;
+        bottom: -12px;
+        background-color: $brand-primary;
+    }
+}
