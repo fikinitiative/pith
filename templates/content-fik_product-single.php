@@ -41,6 +41,11 @@
                     <?php endif; ?>
                 </div>
             </div>
+            <?php if ( is_active_sidebar( 'widget-area-product-bottom' ) ) : ?>
+                <footer class="widget-area-product-bottom col-xs-12">
+                <?php dynamic_sidebar('widget-area-product-bottom'); ?>
+                </footer>
+            <?php endif; ?>
         </div>
         <?php comments_template('/templates/comments.php'); ?>
     </article>
