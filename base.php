@@ -32,6 +32,12 @@
       </section>
   <?php endif; ?>
 
+  <?php  if ( has_post_thumbnail() && !is_singular('fik_product') && !is_singular('post') && !is_archive()) { ?>
+      <figure class="featured-image page-featured-image">
+        <?php the_post_thumbnail( 'page-header-custom-thumbnail', array('class' => 'img-responsive') ); ?>
+      </figure>
+  <?php } ?>
+
   <div class="wrap container" role="document">
     <div class="content row">
       <main class="main <?php echo roots_main_class(); ?>" role="main">
