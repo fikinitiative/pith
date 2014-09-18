@@ -112,7 +112,7 @@ function pith_widgets_init() {
   ));
 
   register_sidebar(array(
-    'name'          => __('Product description bottom', 'roots'),
+    'name'          => __('Products description bottom', 'roots'),
     'id'            => 'widget-area-product-description-bottom',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
@@ -121,7 +121,7 @@ function pith_widgets_init() {
   ));
 
   register_sidebar(array(
-    'name'          => __('Product bottom', 'roots'),
+    'name'          => __('Products bottom', 'roots'),
     'id'            => 'widget-area-product-bottom',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
