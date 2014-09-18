@@ -20,3 +20,18 @@
         background-color: $brand-primary;
     }
 }
+
+// Latest-posts
+
+.latest-posts
+{
+    figcaption
+    {
+        text-align: left;
+
+        .author
+        {
+            margin: 0;
+        }
+    }
+}

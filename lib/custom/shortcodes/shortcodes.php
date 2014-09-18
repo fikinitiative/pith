@@ -231,22 +231,22 @@ function pith_latest_posts($atts) {
     );
 
     $html = "";
-    $html .= "<section class='row latests-posts'>";
+    $html .= "<section class='row latest-posts'>";
 
     while ($q->have_posts()) : $q->the_post();
 
         $html .= '<article class="col-sm-6">';
-        $html .= '<figure class="featured-image">';
+        $html .= '<figure class="featured-image thumbnail">';
         $html .= '<a href="'.get_permalink().'">';
         $html .= get_the_post_thumbnail(get_the_ID(), 'latest-post-custom-thumbnail');
-        $html .= '</a></figure>';
-        $html .= '<header>';
+        $html .= '</a>';
+        $html .= '<figcaption><header>';
         $html .= '<h5 class="entry-title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h5>';
         $html .= '</header>';
         $html .= '<footer>';
         $html .= '<time class="published" datetime="'.get_the_time('c').'">'.get_the_date().'</time>';
         $html .= '<p class="byline author vcard">By <a href="'.get_author_posts_url(get_the_author_meta(ID)).'" rel="author" class="fn">'.get_the_author().'</a></p>';
-        $html .= '</footer>';
+        $html .= '</footer></figcaption></figure>';
         $html .= '</article>';
 
     endwhile;
