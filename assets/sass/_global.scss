@@ -30,4 +30,9 @@ img
 {
     max-width: 100%;
     height: auto;
+
+    &.rounded
+    {
+        border-radius: 100%;
+    }
 }
