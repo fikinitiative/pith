@@ -20,11 +20,11 @@
         font-family: 'Helvetica', 'Arial', sans-serif;
         position: relative;
 
-        .fik-stores-badge
+        &>a
         {
             display: inline-block;
 
-            &>img
+            &>.badge-svg
             {
                 height: 22px;
                 width: 147px;
