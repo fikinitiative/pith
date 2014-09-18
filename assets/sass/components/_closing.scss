@@ -1,41 +1,77 @@
 .closing
 {
     padding-bottom: 15px;
-    padding-top: 15px;
+    padding-top: 17px;
     margin-bottom: 0;
-    background-color: $gray-darker;
+    background-color: $gray-dark;
+    text-align: center;
 
-    p
+    @media all and (min-width: $screen-md-min)
+    {
+        text-align: left;
+    }
+
+    .copy
     {
         margin: 0;
         padding: 0;
         font-size: $font-size-small;
-        float: left;
         color: $gray-lighter;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        position: relative;
 
-        &.fik-stores-badge
+        .fik-stores-badge
+        {
+            display: inline-block;
+
+            &>img
+            {
+                height: 22px;
+                width: 147px;
+                position: relative;
+                top: -2px;
+                pointer-events: none;
+                max-width: none;
+            }
+        }
+    }
+
+    .footer-menu
+    {
+        display: block;
+        padding: 0;
+        margin-top: 15px;
+        font-size: $font-size-small;
+
+        @media all and (min-width: $screen-md-min)
         {
             float: right;
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            font-size: $font-size-small;
-            font-weight: 100;
-            position: relative;
-            padding-right: 87px;
+            margin: 0;
+        }
 
-            &>a
+        li
+        {
+            list-style: none;
+            display: inline-block;
+            border-right: 1px solid $gray-lighter;
+            padding-left: 4px;
+            padding-right: 6px;
+
+            &:first-child
             {
-                display: inline-block;
-                position: absolute;
-                right: 0;
-                top: -3px;
+                padding-left: 0;
+            }
 
-                &>img
-                {
-                    height: 21px;
-                    width: 152px;
-                    pointer-events: none;
-                    max-width: none;
-                }
+            &:last-child
+            {
+                border-right: none;
+                padding-right: 0;
+            }
+
+            a
+            {
+                color: $gray-lighter;
+                font-weight: 200;
             }
         }
     }

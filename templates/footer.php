@@ -19,8 +19,17 @@
 </footer>
 <footer class="jumbotron closing">
     <div class="container">
-    <p class="copy">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-    <p class="fik-stores-badge"><a href="http://fikstores.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/fik-logo-badge-white.svg'?>" /></a></p>
+        <div class="row">
+            <div class="col-sm-12 col-md-6"><p class="copy">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | <a class="fik-stores-badge" href="http://fikstores.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/fik-logo-badge-white.svg'?>" /></a></p></div>
+            <div class="col-sm-12 col-md-6">
+               <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer_menu',
+                        'menu_class' => 'footer-menu',
+                    ));
+                ?>
+            </div>
+        </div>
     </div>
 </footer>
 
