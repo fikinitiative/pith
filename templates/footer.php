@@ -21,6 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6"><p class="copy">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | <a class="fik-stores-badge" href="http://fikstores.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/fik-logo-badge-white.svg'?>" /></a></p></div>
+            <?php if (has_nav_menu(footer_menu)) { ?>
             <div class="col-sm-12 col-md-6">
                <?php
                     wp_nav_menu(array(
@@ -29,6 +30,7 @@
                     ));
                 ?>
             </div>
+            <?php } ?>
         </div>
     </div>
 </footer>
