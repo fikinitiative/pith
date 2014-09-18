@@ -7,6 +7,5 @@ assets/css/main.min.css.map
 assets/css/*main.css
 assets/js/*scripts.js
 assets/js/vendor
-assets/manifest.json
 .sass-cache
 .DS_Store
