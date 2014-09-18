@@ -277,8 +277,6 @@ add_action('widgets_init', 'fikSocialWidget_load_widgets');
 
 function fikSocialWidget_load_widgets() {
     register_widget('fikSocialWidget');
-	// Load widget CSS
-	if(is_active_widget(false, false, 'fik_social_widget')) add_action('wp_head', 'fikSocialWidget_load_style');
 }
 
 ?>
