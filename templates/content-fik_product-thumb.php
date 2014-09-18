@@ -1,10 +1,13 @@
 <?php setup_postdata($post); ?>
 
         <figure class="product-wrap thumbnail">
-        <?php if ( fik_product_stock_quantity() == 0) { ?>
-                <span class="label label-warning product-state">Out of stock</span>
+        <?php  if ( fik_product_stock_quantity() == 0) { ?>
+            <span class="label label-warning product-state">Out of stock</span>
+        <?php  } ?>
+        <?ph  // if ( get_fik_previous_price() != 0 || get_fik_previous_price() != false) { ?>
+        <?php if ( !get_fik_previous_price() ) { ?>
+            <span class="label label-info product-state">Rebajado</span>
         <?php } ?>
-<!--                <span class="label label-info product-state">Rebajado</span>-->
             <a href="<?php the_permalink(); ?>">
                 <?php if ( has_post_thumbnail() ) { ?>
                     <?php the_post_thumbnail( 'store-product-custom-thumbnail', array('class' => 'img-responsive') ); ?>
