@@ -2,9 +2,14 @@
 {
     margin-bottom: 30px;
 
+    &>h3
+    {
+        margin-bottom: $line-height-computed;
+        margin-top: 2*$line-height-computed;
+    }
+
     .comments-icon
     {
-        font-size: 1.5em;
         margin-right: 8px;
     }
 }

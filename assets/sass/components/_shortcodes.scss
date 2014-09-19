@@ -28,10 +28,24 @@
     figcaption
     {
         text-align: left;
+        position: relative;
 
         .author
         {
             margin: 0;
+        }
+
+        .number-comments
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            .comments-icon
+            {
+                margin-right: 4px;
+                color: $brand-primary;
+            }
         }
     }
 }
