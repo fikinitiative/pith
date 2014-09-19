@@ -242,7 +242,7 @@ function pith_latest_posts($atts) {
         $html .= '<a href="'.get_permalink().'">';
         $html .= get_the_post_thumbnail(get_the_ID(), 'latest-post-custom-thumbnail');
         $html .= '</a>';
-        $html .= '<figcaption><header>';
+        $html .= '<figcaption class="caption"><header>';
         $html .= '<h5 class="entry-title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h5>';
         $html .= '</header>';
         $html .= '<footer>';

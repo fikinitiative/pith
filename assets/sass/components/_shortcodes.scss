@@ -25,7 +25,7 @@
 
 .latest-posts
 {
-    figcaption
+    .caption
     {
         text-align: left;
         position: relative;
@@ -44,14 +44,15 @@
         .number-comments
         {
             position: absolute;
-            top: 0;
-            right: 0;
+            top: 21px;
+            right: 9px;
             color: $gray-light;
 
             .comments-icon
             {
                 margin-right: 4px;
                 color: $brand-info;
+                font-size: 1.2em;
             }
         }
     }
