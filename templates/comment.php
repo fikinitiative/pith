@@ -1,7 +1,7 @@
 <?php echo get_avatar($comment, $size = '64'); ?>
 <div class="media-body">
   <h4 class="media-heading"><?php echo get_comment_author_link(); ?></h4>
-  <time datetime="<?php echo get_comment_date('c'); ?>"><?php printf(__('%1$s', 'roots'), get_comment_date(),  get_comment_time()); ?></time>
+  <time datetime="<?php echo get_comment_date('c'); ?>" class="published"><?php printf(__('%1$s', 'roots'), get_comment_date(),  get_comment_time()); ?></time>
   <?php edit_comment_link(__('(Edit)', 'roots'), '', ''); ?>
 
   <?php if ($comment->comment_approved == '0') : ?>

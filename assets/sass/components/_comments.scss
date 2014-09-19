@@ -6,11 +6,24 @@
     {
         margin-bottom: $line-height-computed;
         margin-top: 2*$line-height-computed;
+
+        .comments-icon
+        {
+            margin-right: 8px;
+        }
     }
 
-    .comments-icon
+    .comment
     {
-        margin-right: 8px;
+        .media-body
+        {
+            .published
+            {
+                display: inline-block;
+                margin-bottom: 10px;
+                color: $gray-light;
+            }
+        }
     }
 }
 
