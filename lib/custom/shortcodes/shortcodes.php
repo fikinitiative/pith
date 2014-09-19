@@ -250,11 +250,11 @@ function pith_latest_posts($atts) {
         $html .= '<p class="byline author vcard">By <a href="'.get_author_posts_url(get_the_author_meta('ID')).'" rel="author" class="fn">'.get_the_author().'</a></p>';
 
         if ( get_comments_number() != 0 ){
-            if ( get_comments_number() == 1 ){
-                $html .= '<small class="number-comments"><span class="fa fa-comment-o comments-icon"></span>' . get_comments_number() . '</small>';
-            } else {
-                $html .= '<small class="number-comments"><span class="fa fa-comments-o comments-icon"></span>' . get_comments_number() . '</small>';
+            $html .= '<small class="number-comments"><span class="fa fa-comment';
+            if ( get_comments_number() > 1 ){
+                $html .= 's';
             }
+            $html .= '-o comments-icon"></span>' . get_comments_number() . '</small>';
         }
 
         $html .= '</footer></figcaption></figure>';
