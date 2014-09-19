@@ -36,3 +36,10 @@ img
         border-radius: 100%;
     }
 }
+
+// Make Bootstrap dropdowns visible on hover
+
+.dropdown:hover .dropdown-menu
+{
+    display: block;
+}
