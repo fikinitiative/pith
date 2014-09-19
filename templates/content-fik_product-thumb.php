@@ -4,7 +4,7 @@
         <?php  if ( fik_product_stock_quantity() == 0) { ?>
             <span class="label label-warning product-state">Out of stock</span>
         <?php  } ?>
-        <?php if ( get_fik_previous_price() ) { ?>
+        <?php if ( get_fik_previous_price() && fik_product_stock_quantity() != 0) { ?>
             <span class="label label-info product-state">Rebajado</span>
         <?php } ?>
             <a href="<?php the_permalink(); ?>">
