@@ -173,6 +173,10 @@ class fikSocialWidget extends WP_Widget {
 	// Outputs the content of the widget
 	function widget($args, $instance) {
 
+        // Define variables
+
+        $elements = '';
+
 		// Check if it should display widget
 		if(is_front_page() || is_page() || is_single() || is_404()) {
 			if(is_page() && !$instance['pages']) return;
