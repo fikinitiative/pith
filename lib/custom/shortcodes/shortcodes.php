@@ -180,6 +180,8 @@ function pith_products_grid($atts) {
         );
     }
 
+    $product_grid = '';
+
     $temp_query = $wp_query;
     query_posts($args);
     if ($wp_query->have_posts()) {
@@ -245,7 +247,7 @@ function pith_latest_posts($atts) {
         $html .= '</header>';
         $html .= '<footer>';
         $html .= '<time class="published" datetime="'.get_the_time('c').'">'.get_the_date().'</time>';
-        $html .= '<p class="byline author vcard">By <a href="'.get_author_posts_url(get_the_author_meta(ID)).'" rel="author" class="fn">'.get_the_author().'</a></p>';
+        $html .= '<p class="byline author vcard">By <a href="'.get_author_posts_url(get_the_author_meta('ID')).'" rel="author" class="fn">'.get_the_author().'</a></p>';
         $html .= '</footer></figcaption></figure>';
         $html .= '</article>';
 
@@ -338,6 +340,7 @@ add_shortcode('fik_button', 'pith_buttons');
 
 function pith_slider($atts) {
     global $wp_query;
+    $slider = '';
     if (isset($atts['ids'])) {
         $ids = explode(',', $atts['ids']);
         if (is_array($ids)) {
