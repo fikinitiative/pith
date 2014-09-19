@@ -25,6 +25,20 @@
 
 .latest-posts
 {
+    .thumbnail
+    {
+        a
+        {
+            img
+            {
+                &:hover
+                {
+                    opacity: 0.85;
+                }
+            }
+        }
+    }
+
     .caption
     {
         text-align: left;
