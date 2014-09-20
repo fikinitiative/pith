@@ -37,9 +37,18 @@ img
     }
 }
 
-// Make Bootstrap dropdowns visible on hover
+// Make Bootstrap dropdowns visible on hover on desktop
 
-.dropdown:hover .dropdown-menu
+@media all and (min-width:$screen-md-min)
 {
-    display: block;
+    .dropdown
+    {
+        &:hover
+        {
+            .dropdown-menu
+            {
+                display: block;
+            }
+        }
+    }
 }
