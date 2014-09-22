@@ -51,7 +51,7 @@
         <li class="hide_sc"><a id="sc_latest-posts" href="#" onclick="javascript:return false;">Latest posts</a><a class="info" href="#" target="_blank">info</a></li>
         <li class="hide_sc"><a id="sc_products-grid" href="#" onclick="javascript:return false;">Products grid</a><a class="info" href="#" target="_blank">info</a></li>
         <li class="hide_sc"><a id="sc_special-title" href="#" onclick="javascript:return false;">Special title</a><a class="info" href="#" target="_blank">info</a></li>
-        <li class="hide_sc"><a id="sc_slider" href="#" onclick="javascript:return false;">Slider</a><a class="info" href="http://support.fikstores.com/customer/en/portal/articles/1205875-añadir-un-slider-de-imágenes-a-tu-tienda" target="_blank">info</a></li>
+        <li class="hide_sc"><a id="sc_slider" href="#" onclick="javascript:return false;">Slider</a><a class="info" href="/slider/" target="_blank">info</a></li>
         <li class="separator"></li>
         <li class="hide_sc"><a id="sc_google-map" href="#" onclick="javascript:return false;">Map</a><a class="info" href="http://flexible-map.webaware.net.au/manual/attribute-reference/" target="_blank">info</a></li>
     </ul>
