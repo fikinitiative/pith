@@ -154,7 +154,7 @@ function pith_products_grid($atts) {
     if (isset($atts['quantity']) && $atts['quantity'] != '') {
         $quantity = $atts['quantity'];
     } else {
-        $quantity = '1';
+        $quantity = -1;
     }
 
     if (isset($atts['columns']) && $atts['columns'] != '') {
@@ -187,8 +187,11 @@ function pith_products_grid($atts) {
     if ($wp_query->have_posts()) {
         $product_grid = '<section class="row">';
         /* Start the Loop */
-        $i = 0;
-        while (have_posts() && $i < $quantity) : the_post();
+        $i = 1;
+        while (have_posts()) : the_post();
+            if($i > $quantity && $quantity != -1){
+                break;
+            }
             /* Include the post format-specific template for the content. If you want to
              * this in a child theme then include a file called called content-___.php
              * (where ___ is the post format) and that will be used instead.
