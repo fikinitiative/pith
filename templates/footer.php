@@ -20,7 +20,7 @@
 <footer class="jumbotron closing">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-6"><p class="copy">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | <?php the_fikstores_badge(); ?></p></div>
+            <div class="col-sm-12 col-md-6"><small class="copy">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | <?php the_fikstores_badge(); ?></small></div>
             <?php if (has_nav_menu('footer_menu')) { ?>
             <div class="col-sm-12 col-md-6">
                <?php
