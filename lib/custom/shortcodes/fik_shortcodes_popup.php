@@ -40,19 +40,19 @@
 </style>
 <div id="fik_shortcodes_popup">
     <ul>
-        <li class="hide_sc"><a id="sc_row" href="#" onclick="javascript:return false;">Row</a><a class="info" href="/rows-and-columns/" target="_blank">info</a></li>
+        <li class="hide_sc"><a id="sc_row" href="#" onclick="javascript:return false;">Row</a><a class="info" href="http://pith.fikstore.com/grid/" target="_blank">info</a></li>
         <li class="hide_sc"><a id="sc_col_1-2" href="#" onclick="javascript:return false;">Column 1/2</a></li>
         <li class="hide_sc"><a id="sc_col_1-3" href="#" onclick="javascript:return false;">Column 1/3</a></li>
         <li class="hide_sc"><a id="sc_col_1-4" href="#" onclick="javascript:return false;">Column 1/4</a></li>
         <li class="hide_sc"><a id="sc_col_2-3" href="#" onclick="javascript:return false;">Column 2/3</a></li>
         <li class="hide_sc"><a id="sc_col_3-4" href="#" onclick="javascript:return false;">Column 3/4</a></li>
         <li class="separator"></li>
-        <li class="hide_sc"><a id="sc_button" href="#" onclick="javascript:return false;">Button</a><a class="info" href="/buttons/" target="_blank">info</a></li>
-        <li class="hide_sc"><a id="sc_latest-posts" href="#" onclick="javascript:return false;">Latest posts</a><a class="info" href="/latest-posts/" target="_blank">info</a></li>
-        <li class="hide_sc"><a id="sc_products-grid" href="#" onclick="javascript:return false;">Products grid</a><a class="info" href="/products-grid/" target="_blank">info</a></li>
-        <li class="hide_sc"><a id="sc_special-title" href="#" onclick="javascript:return false;">Special title</a><a class="info" href="/typography/" target="_blank">info</a></li>
-        <li class="hide_sc"><a id="sc_slider" href="#" onclick="javascript:return false;">Slider</a><a class="info" href="/slider/" target="_blank">info</a></li>
+        <li class="hide_sc"><a id="sc_button" href="#" onclick="javascript:return false;">Button</a><a class="info" href="http://pith.fikstore.com/buttons/" target="_blank">info</a></li>
+        <li class="hide_sc"><a id="sc_latest-posts" href="#" onclick="javascript:return false;">Latest posts</a><a class="info" href="http://pith.fikstore.com/latest-posts/" target="_blank">info</a></li>
+        <li class="hide_sc"><a id="sc_products-grid" href="#" onclick="javascript:return false;">Products grid</a><a class="info" href="http://pith.fikstore.com/products-grid/" target="_blank">info</a></li>
+        <li class="hide_sc"><a id="sc_special-title" href="#" onclick="javascript:return false;">Special title</a><a class="info" href="http://pith.fikstore.com/typography/" target="_blank">info</a></li>
+        <li class="hide_sc"><a id="sc_slider" href="#" onclick="javascript:return false;">Slider</a><a class="info" href="http://pith.fikstore.com/slider/" target="_blank">info</a></li>
         <li class="separator"></li>
-        <li class="hide_sc"><a id="sc_google-map" href="#" onclick="javascript:return false;">Map</a><a class="info" href="/google-maps/" target="_blank">info</a></li>
+        <li class="hide_sc"><a id="sc_google-map" href="#" onclick="javascript:return false;">Map</a><a class="info" href="http://pith.fikstore.com/google-maps/" target="_blank">info</a></li>
     </ul>
 </div>
