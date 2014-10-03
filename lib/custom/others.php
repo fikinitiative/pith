@@ -36,3 +36,13 @@ if ( !function_exists( 'load_template_part' ) ){
 	    return $var;
 	}
 }
+
+/*
+ * This functions allows to detect is some page is blog
+ */
+
+function is_blog () {
+	global  $post;
+	$posttype = get_post_type($post );
+	return ( ((is_archive()) || (is_author()) || (is_category()) || (is_home()) || (is_single()) || (is_tag())) && ( $posttype == 'post')  ) ? true : false ;
+}
