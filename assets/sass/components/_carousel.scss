@@ -33,6 +33,26 @@
         .carousel-caption
         {
 
+            @media all and (max-width: $screen-sm-min)
+            {
+                padding-bottom: 0;
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p
+                {
+                    font-size: 1.2em;
+                }
+
+                a
+                {
+                    font-size: 0.9em;
+                }
+            }
         }
     }
 
