@@ -2,16 +2,14 @@
 {
     .carousel-indicators
     {
-        bottom: 0;
-        margin-bottom: 5px;
 
         li
         {
-            width: 8px;
-            height: 8px;
+            width: 12px;
+            height: 12px;
             margin-bottom: 1px;
-            margin-left: 3px;
-            margin-right: 3px;
+            margin-left: 4px;
+            margin-right: 4px;
 
             &:hover
             {
@@ -24,18 +22,9 @@
             }
         }
 
-        @media all and (min-width: $screen-sm-min)
+        @media all and (max-width: $screen-xs-max)
         {
-            bottom: 20px;
-            margin-bottom: 10px;
-
-            li
-            {
-                width: 12px;
-                height: 12px;
-                margin-left: 4px;
-                margin-right: 4px;
-            }
+            display: none;
         }
     }
 
