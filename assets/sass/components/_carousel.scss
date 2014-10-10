@@ -53,6 +53,11 @@
                     font-size: 0.9em;
                 }
             }
+
+            @media all and (min-width: $screen-sm-min)
+            {
+                padding-bottom: 30px;
+            }
         }
     }
 
