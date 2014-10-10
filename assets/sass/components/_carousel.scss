@@ -6,6 +6,12 @@
         {
             bottom: 0;
             margin-bottom: 5px;
+
+            li
+            {
+                width: 8px;
+                height: 8px;
+            }
         }
 
         li
@@ -50,12 +56,17 @@
                 h6,
                 p
                 {
-                    font-size: 1.2em;
+                    font-size: 0.9em;
                 }
 
                 a
                 {
-                    font-size: 0.9em;
+                    font-size: 0.8em;
+                }
+
+                .btn
+                {
+                    padding: 3px 8px;
                 }
             }
 
