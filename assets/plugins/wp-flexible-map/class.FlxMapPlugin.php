@@ -96,8 +96,6 @@ class FlxMapPlugin {
 		$min = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
 		wp_register_script('flxmap', get_stylesheet_directory_uri() . "/assets/plugins/wp-flexible-map/" . "flexible-map$min.js", array('google-maps'), FLXMAP_PLUGIN_VERSION, true);
 
-		// theme writers: you can remove this stylesheet by calling wp_dequeue_script('flxmap');
-		wp_enqueue_style('flxmap', get_stylesheet_directory_uri() . "/assets/plugins/wp-flexible-map/" . 'styles.css', false, FLXMAP_PLUGIN_VERSION);
 	}
 
 	/**
