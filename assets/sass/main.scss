@@ -1,6 +1,5 @@
 // Fonts
 @import "_fonts";
-@import "../fonts/font-awesome/css/font-awesome.css";
 
 // Bootstrap
 @import "_bootstrap.scss";
@@ -35,4 +34,4 @@
 @import "layouts/pages/_404";               // 404 page styling
 
 // Plugins
-@import "../plugins/wp-flexible-map/styles.css";       // Flexible Map
+@import "../plugins/wp-flexible-map/_styles.scss";       // Flexible Map
