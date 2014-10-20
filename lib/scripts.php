@@ -22,7 +22,7 @@ function roots_scripts() {
   if (WP_ENV === 'development') {
     $assets = array(
       'css'       => '/assets/css/main.css',
-      'font-awesome' => '/assets/fonts/font-awesome/css/font-awesome.min.css',
+      'font-awesome' => get_template_directory_uri() . '/assets/fonts/font-awesome/css/font-awesome.min.css',
       'js'        => '/assets/js/scripts.js',
       'modernizr' => '/assets/vendor/modernizr/modernizr.js',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'
@@ -40,7 +40,7 @@ function roots_scripts() {
   }
 
   wp_enqueue_style('roots_css', get_template_directory_uri() . $assets['css'], false, null);
-  wp_enqueue_style('font-awesome', get_template_directory_uri() . $assets['font-awesome'], false, null);
+  wp_enqueue_style('font-awesome', $assets['font-awesome'], false, null);
 
   /**
    * jQuery is loaded using the same method from HTML5 Boilerplate:
