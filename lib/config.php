@@ -8,6 +8,7 @@ add_theme_support('soil-nice-search');      // Enable /?s= to /search/ redirect 
 add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails component on [gallery]
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
 add_theme_support('bootstrap-3');           // Enable Bootstrap 3 support
+add_theme_support('bootstrap-3-forms');     // Enable Bootstrap 3 forms
 
 /**
  * Configuration values
