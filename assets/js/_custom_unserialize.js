@@ -1,22 +1,3 @@
-// -------------------- Load Bootstrap carousel
-// --------------------
-
-jQuery('.carousel').carousel();
-
-// -------------------- Product thumbnails function
-// --------------------
-
-jQuery(document).ready(function() {
-    jQuery(".product-image-thumbnails a").click(function(event) {
-        jQuery("#prod-img").attr("src", jQuery(this).attr("href"));
-// prevent href
-        return false;
-    });
-});
-
-// -------------------- Unserialize function
-// --------------------
-
 // https://github.com/kvz/phpjs/blob/master/functions/var/unserialize.js
 function unserialize (data) {
     var that = this,
@@ -153,19 +134,3 @@ function unserialize (data) {
 
     return _unserialize((data + ''), 0)[2];
 }
-
-// -------------------- Cart number function
-// --------------------
-
-jQuery(document).ready(function() {
-    if ((jQuery('.cart-menu li a').length>0) && (fik_cart_name.length>0)) {
-        if (typeof jQuery.cookie(fik_cart_name) !== 'undefined') {
-            var cart = unserialize(decodeURIComponent(jQuery.cookie(fik_cart_name)));
-            var itemsQuantity = 0;
-            jQuery.each( cart.items, function( key, value ) {
-                itemsQuantity = itemsQuantity + cart.items[key].quantity * 1 ;
-            });
-            jQuery('.cart-menu li a').append(' <span class="badge">' + itemsQuantity + '</span>');
-        }
-    }
-});

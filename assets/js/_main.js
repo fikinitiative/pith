@@ -23,6 +23,8 @@ var Roots = {
   common: {
     init: function() {
       // JavaScript to be fired on all pages
+        addNumberOfProductsInCartMenu();
+        initBootstrapCarousel();
     }
   },
   // Home page
@@ -31,10 +33,11 @@ var Roots = {
       // JavaScript to be fired on the home page
     }
   },
-  // About us page, note the change from about-us to about_us.
-  about_us: {
+  // Single product page, note the change from single-fik_product to single_fik_product.
+  single_fik_product: {
     init: function() {
-      // JavaScript to be fired on the about us page
+      // JavaScript to be fired on single products page
+        singleProductCarousel();
     }
   }
 };
